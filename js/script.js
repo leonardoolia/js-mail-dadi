@@ -62,11 +62,14 @@
 
 //? 1. Recuperare gli elementi HTML
 
+// input email
 const email = document.getElementById('email');
 console.log(email);
 
+// bottone
+const button = document.getElementById('button');
 
-//? 2. Recuperare il valore dell'email dal form HTML
+// h2
+const accessStatus = document.getElementById('access-status');
 
-const emailValue = email.value;
-console.log(emailValue);
+
