@@ -1,59 +1,72 @@
-//? 1. Recuperare gli elementi dall'HTML
+// //! ESERCIZIO 1
 
-const user = document.getElementById('user-dice');
-const pc = document.getElementById('pc-dice');
-const finalResult = document.getElementById('final-result');
+// //? 1. Recuperare gli elementi dall'HTML
 
-
-//? 2. Creare variabili per estrazione casuale di numeri da 1 a 6
-
-// Dado dell'utente
-const userDice = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
-console.log('Dado utente: ', userDice);
-
-// Dado del pc
-const pcDice = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
-console.log('Dado pc: ', pcDice);
-
-//? 3. Preparare messaggi per decretare il vincitore
-
-const userWin = 'Congratulazioni, hai vinto tu';
-const pcWin = 'Che peccato, ha vinto il pc';
-const retry = 'Pareggio, riprova';
+// const user = document.getElementById('user-dice');
+// const pc = document.getElementById('pc-dice');
+// const finalResult = document.getElementById('final-result');
 
 
-//? 4. Determinare il vincitore in base al numero più alto
+// //? 2. Creare variabili per estrazione casuale di numeri da 1 a 6
 
-if (userDice > pcDice) {
-    console.log(userWin);
-} else if (userDice < pcDice) {
-    console.log(pcWin);
-} else {
-    console.log(retry);
-};
+// // Dado dell'utente
+// const userDice = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+// console.log('Dado utente: ', userDice);
 
+// // Dado del pc
+// const pcDice = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+// console.log('Dado pc: ', pcDice);
 
-//? 5. Stampare i risultati in pagina
+// //? 3. Preparare messaggi per decretare il vincitore
 
-const userDiceNumber = userDice;
-console.log(userDiceNumber);
-
-const pcDiceNumber = pcDice;
-console.log(pcDiceNumber);
-
-// Risultato dado utente
-user.innerText = 'Il numero del tuo dado è: ' + userDiceNumber;
-
-// Risultato dado pc
-pc.innerText = 'Il numero del dado avversario è: ' + pcDiceNumber;
-
-// Risultato finale
-if (userDice > pcDice) {
-    finalResult.innerText = userWin;
-} else if (userDice < pcDice) {
-    finalResult.innerText = pcWin;
-} else {
-    finalResult.innerText = retry;
-};
+// const userWin = 'Congratulazioni, hai vinto tu';
+// const pcWin = 'Che peccato, ha vinto il pc';
+// const retry = 'Pareggio, riprova';
 
 
+// //? 4. Determinare il vincitore in base al numero più alto
+
+// if (userDice > pcDice) {
+//     console.log(userWin);
+// } else if (userDice < pcDice) {
+//     console.log(pcWin);
+// } else {
+//     console.log(retry);
+// };
+
+
+// //? 5. Stampare i risultati in pagina
+
+// const userDiceNumber = userDice;
+// console.log(userDiceNumber);
+
+// const pcDiceNumber = pcDice;
+// console.log(pcDiceNumber);
+
+// // Risultato dado utente
+// user.innerText = 'Il numero del tuo dado è: ' + userDiceNumber;
+
+// // Risultato dado pc
+// pc.innerText = 'Il numero del dado avversario è: ' + pcDiceNumber;
+
+// // Risultato finale
+// if (userDice > pcDice) {
+//     finalResult.innerText = userWin;
+// } else if (userDice < pcDice) {
+//     finalResult.innerText = pcWin;
+// } else {
+//     finalResult.innerText = retry;
+// };
+
+//! ESERCIZIO 2
+
+//? 1. Recuperare gli elementi HTML
+
+const email = document.getElementById('email');
+console.log(email);
+
+
+//? 2. Recuperare il valore dell'email dal form HTML
+
+const emailValue = email.value;
+console.log(emailValue);
