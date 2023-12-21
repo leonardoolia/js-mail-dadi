@@ -33,5 +33,27 @@ if (userDice > pcDice) {
 };
 
 
+//? 5. Stampare i risultati in pagina
+
+const userDiceNumber = userDice;
+console.log(userDiceNumber);
+
+const pcDiceNumber = pcDice;
+console.log(pcDiceNumber);
+
+// Risultato dado utente
+user.innerText = 'Il numero del tuo dado è: ' + userDiceNumber;
+
+// Risultato dado pc
+pc.innerText = 'Il numero del dado avversario è: ' + pcDiceNumber;
+
+// Risultato finale
+if (userDice > pcDice) {
+    finalResult.innerText = userWin;
+} else if (userDice < pcDice) {
+    finalResult.innerText = pcWin;
+} else {
+    finalResult.innerText = retry;
+};
 
 
