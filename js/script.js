@@ -73,3 +73,10 @@ const button = document.getElementById('button');
 const accessStatus = document.getElementById('access-status');
 
 
+//? 2. Creare un array di email valide
+
+const validEmail = ["ciccio12@gmail.com",
+    "pippo12@gmail.com",
+    "paperino12@gmail.com"
+];
+
