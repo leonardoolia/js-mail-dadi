@@ -86,3 +86,9 @@ const accessMessage = 'Accesso consentito';
 const deniedMessage = 'Accesso negato';
 
 
+//? 4. Recuperare il valore dell'email dal form HTML
+
+button.addEventListener('click', function () {
+    const emailValue = email.value;
+
+});
