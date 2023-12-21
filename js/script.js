@@ -80,3 +80,9 @@ const validEmail = ["ciccio12@gmail.com",
     "paperino12@gmail.com"
 ];
 
+//? 3. Creare un messaggio per l'utente
+
+const accessMessage = 'Accesso consentito';
+const deniedMessage = 'Accesso negato';
+
+
