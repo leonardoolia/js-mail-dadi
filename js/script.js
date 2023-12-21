@@ -22,4 +22,16 @@ const pcWin = 'Che peccato, ha vinto il pc';
 const retry = 'Pareggio, riprova';
 
 
+//? 4. Determinare il vincitore in base al numero più alto
+
+if (userDice > pcDice) {
+    console.log(userWin);
+} else if (userDice < pcDice) {
+    console.log(pcWin);
+} else {
+    console.log(retry);
+};
+
+
+
 
