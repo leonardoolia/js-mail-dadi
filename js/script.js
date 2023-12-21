@@ -15,5 +15,11 @@ console.log('Dado utente: ', userDice);
 const pcDice = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
 console.log('Dado pc: ', pcDice);
 
+//? 3. Preparare messaggi per decretare il vincitore
+
+const userWin = 'Congratulazioni, hai vinto tu';
+const pcWin = 'Che peccato, ha vinto il pc';
+const retry = 'Pareggio, riprova';
+
 
 
