@@ -40,7 +40,11 @@ Buon lavoro e buon divertimento!
 <hr>
 
 # Esercizio 1
+Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 
+Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+Stampiamo in pagina i due tiri e il risultato.
 
 ### Step
 
@@ -50,4 +54,23 @@ Buon lavoro e buon divertimento!
 1. Determinare il vincitore in base al numero più alto
 1. Stampare i risultati in pagina
 
+<hr>
 
+# Esercizio 2
+Inventa una lista di email autorizzate.
+
+Chiedi all’utente la sua email, con un piccolo form.
+
+Controlla che la mail inserita sia nella lista di chi può accedere.
+
+Stampa un messaggio appropriato sull’esito del controllo.
+
+
+### Step
+
+1. Recuperare gli elementi dall'HTML
+1. Creare un array di email valide
+1. Creare un messaggio per l'utente
+1. Recuperare il valore dell'email dal form HTML
+1. Verificare se l'email inserita dall'utente è presente nell'array
+1. Stampare messaggio sullo schermo
