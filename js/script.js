@@ -114,8 +114,12 @@ button.addEventListener('click', function () {
         }
     }
 
-
-
+    //? 6. Stampare messaggio sullo schermo
+    if (allowedUser) {
+        accessStatus.innerText = accessMessage;
+    } else {
+        accessStatus.innerText = deniedMessage;
+    };
 
 });
 
