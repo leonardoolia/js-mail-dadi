@@ -10,11 +10,11 @@
 // //? 2. Creare variabili per estrazione casuale di numeri da 1 a 6
 
 // // Dado dell'utente
-// const userDice = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+// const userDice = Math.floor(Math.random() * 6) + 1;
 // console.log('Dado utente: ', userDice);
 
 // // Dado del pc
-// const pcDice = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+// const pcDice = Math.floor(Math.random() * 6) + 1;
 // console.log('Dado pc: ', pcDice);
 
 // //? 3. Preparare messaggi per decretare il vincitore
@@ -72,6 +72,10 @@ const button = document.getElementById('button');
 // h2
 const accessStatus = document.getElementById('access-status');
 
+// Form
+
+const htmlForm = document.getElementById('form');
+
 
 //? 2. Creare un array di email valide
 
@@ -89,6 +93,19 @@ const deniedMessage = 'Accesso negato';
 //? 4. Recuperare il valore dell'email dal form HTML
 
 button.addEventListener('click', function () {
-    const emailValue = email.value;
+    // Raccolgo il value dall'inptu
+    const emailValue = email.value.trim();
+
+    //! Validazione
+    if (!emailValue) {
+        alert('email obbligatoria');
+        return;
+    }
+
+
+
+
 
 });
+
+
