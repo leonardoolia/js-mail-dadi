@@ -103,6 +103,17 @@ button.addEventListener('click', function () {
     }
 
 
+    // //? 5. Verificare se l'email inserita dall'utente è presente nell'array
+    let allowedUser = false;
+
+    // Controllo le email della lista
+    for (let i = 0; i < validEmail.length; i++) {
+        if (emailValue === validEmail[i]) {
+            console.log(accessMessage);
+            allowedUser = true;
+        }
+    }
+
 
 
 
